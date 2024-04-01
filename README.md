@@ -11,7 +11,7 @@ The original objectives were:
 ## V1
 This tracer only checks if light rays are intersecting with spheres. It initially only has bool colours true and false representing white and black.
 The intersection logic was made using the figure given below:<br><br>
-![Ray-Sphere intersection geometric solution](https://www.scratchapixel.com/images/ray-simple-shapes/raysphereisect1.png?)
+![Ray-Sphere intersection geometric solution](https://www.scratchapixel.com/images/ray-simple-shapes/raysphereisect1.png?)<br>
 Credit: <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/minimal-ray-tracer-rendering-simple-shapes/ray-sphere-intersection.html">scratchapixel</a>
 
 How to run:
