@@ -314,7 +314,7 @@ int main() {
     for (int i = 0; i < 30 * ray_per_pixel; ++i) {
         for (int j = 0; j < 40 * ray_per_pixel; ++j) {
             vect dir(170.0 - ((double)j / (double)ray_per_pixel), 140.0 - ((double)i / (double)ray_per_pixel), 0);
-            colour clr = getAverageColour(orig, dir, &spheres, ray_per_pixel, neighbour_per_pixel);
+            colour clr = getAverageColour(orig, dir, &spheres, neighbour_per_pixel, ray_per_pixel);
             
             MyFile << clr.r << " " << clr.g << " " << clr.b << ",";
             
