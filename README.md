@@ -75,7 +75,7 @@ python v2.2.py
 This version further improves upon the previous tracer by allowing transparent objects. Transparent objects now lead to the ray splitting into a reflected and refracted ray. The ratio of refracted to reflected can be adjusted in the constructor. The refractive index parameter also affects the refrcated ray's path.
 Total internal reflection is handled automatically because there is a limit on the number of bounces. Once the limit is reached, it returns a black colour.
 This version also has a shell script, which makes executing it easier.<br>
-<b>Note:</b> This version is quite slower than previous versions due to almost double recursion at each step (reflection + refaction). I would recommend skipping this version and run version 3.1. It has the same functionalities, but way faster.
+<u><b>Note:</b></u> This version is quite slower than previous versions due to almost double recursion at each step (reflection + refaction). I would recommend skipping this version and run version 3.1. It has the same functionalities, but way faster.
 
 How to run:
 ```
