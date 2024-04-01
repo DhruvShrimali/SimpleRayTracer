@@ -307,7 +307,7 @@ int main() {
     
     std::ofstream MyFile("intermediate.txt");
 
-    int ray_per_pixel = 15; // Adjust the number of samples per pixel
+    int ray_per_pixel = 20; // Adjust the number of samples per pixel
     int neighbour_per_pixel = 5; // Adjust to smoothen image
     
     vect orig(150, 125, -20);
