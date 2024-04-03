@@ -14,7 +14,7 @@ pip install numpy
 ```
 
 Sample Render:<br>
-
+![normal_tom_9_10](https://github.com/DhruvShrimali/SimpleRayTracer/assets/95020813/95e59a9f-c911-47e8-9067-9ef42c097772)
 
 ## V1
 This tracer only checks if light rays are intersecting with spheres. It initially only has bool colours true and false representing white and black.<br>
