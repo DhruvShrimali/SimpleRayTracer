@@ -13,8 +13,7 @@ pip install pillow
 pip install numpy
 ```
 
-Sample Render:
-![Sample render image](https://drive.google.com/file/d/1lPaTDgLSmMkGtQNyWVp497wXYDLRGJ9G/view?usp=sharing)
+Sample Render:<br>
 
 
 ## V1
