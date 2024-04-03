@@ -13,6 +13,9 @@ pip install pillow
 pip install numpy
 ```
 
+Sample Render:
+![Sample render image](https://drive.google.com/file/d/1lPaTDgLSmMkGtQNyWVp497wXYDLRGJ9G/view?usp=sharing)
+
 
 ## V1
 This tracer only checks if light rays are intersecting with spheres. It initially only has bool colours true and false representing white and black.<br>
