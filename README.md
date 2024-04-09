@@ -103,6 +103,7 @@ sh v3.1.sh
 This version was created to conform to my HCI project requirements. This was done by adding an text file that takes as input the sphere paramaters. This method now also includes iterations parameter that runs the ray tracer as many times as specified and averages the result in the end, improving image quality.<br>
 Parameters like MAXBOUNCE, neighbour_per_pixel and iterations are tweaked to get decent performance.<br>
 Now this version also outputs a sound once once the rendering is complete.<br>
+Note: Please read documentation.pdf to understand input file format.
 
 How to run:
 ```
