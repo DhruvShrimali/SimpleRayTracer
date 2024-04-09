@@ -437,7 +437,7 @@ int main() {
     time *= MAXBOUNCE;
     time *= neighbour_per_pixel; // O(n^2)
     time *= neighbour_per_pixel;
-    time /= 236125; //obtained experimentally
+    time /= 356125; //obtained experimentally
     int time_min = time/60;
     time = time%60;
     int time_hour = time_min/60;
