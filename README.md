@@ -109,3 +109,15 @@ How to run:
 ```
 sh v3.2.sh
 ```
+
+## V4
+This new version of the ray tracer now supports tetrahedrons - and by extension triangular faces. The decision to select tetrahedrons was simply to allow 3D objects that could be transparent. The simplest shape that would allow it would be tetrahedrons. The new update also attempts to correct the time modifier after the first run if the default value estimates time with more than 10% error. Time calculation logic has also been improved (not 100% accurate, but good enough) to take into account splitting of light rays due to transparent objects. This update also allows you to specify the amount of time you want the code to run, and is a set to 180 seconds by default. 
+
+How to run:
+```
+sh v4.sh
+```
+
+Sample Render:<br>
+![output](https://github.com/user-attachments/assets/279d9fca-fd8d-4bff-b3ed-3e758bb04b41)
+
