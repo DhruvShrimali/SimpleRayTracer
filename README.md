@@ -13,6 +13,7 @@ Required python librares (for PNG generation from V1.2 onwards):
 ```bash
 pip install pillow
 pip install numpy
+pip install opencv-python
 ```
 
 ## How to Run (latest version)
