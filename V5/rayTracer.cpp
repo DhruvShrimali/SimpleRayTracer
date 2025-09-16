@@ -330,6 +330,7 @@ int main(int argc, char* argv[]) {
     bool time_calc_correct = true;
     bool checked = false;
     int time_modifier = -1;
+    int expected_epochs = 0;
     do{
         std::vector<std::thread> threads;
         for (int i = 0; i < numThreads; ++i) {
@@ -357,7 +358,9 @@ int main(int argc, char* argv[]) {
             }
             checked=true;
             time = epoch_duration.count();
+            expected_epochs = (int)(time_remaining / time);
         }
+        std::cout<<"Epoch "<<EPOCHS<<" / "<<expected_epochs<<" completed\n";
     } 
     // while(epoch_duration.count() < TIMELIMIT);
     while(epoch_duration.count() < ((int)time_remaining-(int)time));
