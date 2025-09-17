@@ -1,7 +1,7 @@
 #pragma once
 
 constexpr int MAXBOUNCE = 20;            // Max number of reflections a ray can undergo (affects brightness and realism)
-constexpr int TIMELIMIT = 600;           // Maximum render time in seconds
+constexpr int TIMELIMIT = 300;           // Maximum render time in seconds
 
 constexpr int ray_per_pixel = 20;        // Number of rays traced per pixel (higher → smoother image, slower render)
 constexpr int neighbour_per_pixel = 7;   // Number of rays in neighborhood for anti-aliasing (higher → smoother edges)
