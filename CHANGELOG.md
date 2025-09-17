@@ -166,7 +166,7 @@ sh rayTracer.sh
 
 ## V6
 - Major optimization: dropped time complexity from O(2ⁿ) to O(n⁵), resulting in dramatic performance improvements (10x faster for the scene in V5).
-- Added MAXEPOCHS parameter to control the maximum number of epochs (since runtime is much faster and image quality gains taper off after ~10–20 epochs).
+- Added EPOCHLIMIT parameter to control the maximum number of epochs (since runtime is much faster and image quality gains taper off after ~10–20 epochs).
 - Introduced demonstration materials (videos + graphs) to visually explain the effect of key config parameters (folder: ParamInsights).
 
 <ins><b>📄 Note:</ins></b><br>
