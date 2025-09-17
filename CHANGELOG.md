@@ -152,9 +152,28 @@ sh v4.sh
 
 - Lights’ intensity is now fixed. For scenes with non-transparent objects, you can decrease MAX_DEPTH to achieve almost the same quality in much less time.
 - Decreasing MAX_DEPTH reduces illumination slightly; this can be compensated by increasing light intensity.
-- Prefer using spheres over tetrahedrons when possible, as sphere intersection logic is much faster.
+- Prefer using spheres over tetrahedrons when possible, as sphere intersection logic is much faster.<br>
+
+<ins><b>⚠️ Note:</b></ins><br>
+
+- This version is much slower due to nearly double recursion (reflection + refraction).
+- Recommended to skip this version and use V6, which has the same functionality but is much faster.
 
 How to run:
 ```bash
-sh v5.sh
+sh rayTracer.sh
+```
+
+## V6
+- Major optimization: dropped time complexity from O(2ⁿ) to O(n⁵), resulting in dramatic performance improvements (10x faster for the scene in V5).
+- Added MAXEPOCHS parameter to control the maximum number of epochs (since runtime is much faster and image quality gains taper off after ~10–20 epochs).
+- Introduced demonstration materials (videos + graphs) to visually explain the effect of key config parameters (folder: ParamInsights).
+
+<ins><b>📄 Note:</ins></b><br>
+
+- Performance scaling is now far more predictable, making higher values of config variables feasible without exponential slowdowns.
+
+How to run:
+```bash
+sh rayTracer.sh
 ```

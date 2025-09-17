@@ -18,7 +18,7 @@ pip install opencv-python
 
 ## How to Run (latest version)
 ```bash
-cd v5
+cd v6
 sh rayTracer.sh
 ```
 
