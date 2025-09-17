@@ -1,7 +1,7 @@
 #pragma once
 
-constexpr int MAXBOUNCE = 25;            // Max number of reflections a ray can undergo (affects brightness and realism)
-constexpr int TIMELIMIT = 10800;           // Maximum render time in seconds
+constexpr int MAXBOUNCE = 20;            // Max number of reflections a ray can undergo (affects brightness and realism)
+constexpr int TIMELIMIT = 600;           // Maximum render time in seconds
 
 constexpr int ray_per_pixel = 20;        // Number of rays traced per pixel (higher → smoother image, slower render)
 constexpr int neighbour_per_pixel = 7;   // Number of rays in neighborhood for anti-aliasing (higher → smoother edges)
@@ -9,8 +9,8 @@ constexpr int IMG_BITS = 16;             // Bit depth of output image (8 or 16 b
 
 constexpr bool DOF = true;               // Enable Depth of Field (true → objects at focal distance sharp, others blurred)
 constexpr double FOCAL_LENGTH = 10.0;    // Camera focal length (controls field of view)
-constexpr double FSTOP = 2.0;            // Camera aperture (smaller → shallower DOF, larger → deeper focus)
-constexpr double FOCAL_DISTANCE = 300.0; // Distance at which camera is perfectly focused (used with DOF)
+constexpr double FSTOP = 0.4;            // Camera aperture (smaller → shallower DOF, larger → deeper focus)
+constexpr double FOCAL_DISTANCE = 160.0; // Distance at which camera is perfectly focused (used with DOF)
 
 //Do not change the things below this line
 constexpr int TIME_MODIFIER = 3529980;
